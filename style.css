@@ -1,0 +1,607 @@
+*{
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(237, 195, 228, 0.533);
+}
+
+/* style for header */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav{
+  height: 80px;
+  background-color: rgb(128, 4, 64);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.514);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-name img{
+  margin-left: 30px;
+  height: 70px;
+  border: black solid 2px;
+  border-radius: 50px;
+}
+
+.nav-logo-name h1{
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 85px;
+}
+
+
+/* style for nav menus */
+
+.nav-menu{
+  margin-right: 200px ;
+}
+
+.nav-menu a{
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s;
+}
+
+.nav-menu a:hover{
+  color: rgb(18, 222, 154);
+}
+
+
+/* style for main */
+
+main{
+  position: relative;
+  top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-img{
+  position: relative;
+  height: 700px;
+  background: url(images/home-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 3px 8px 2px rgba(0, 0, 0, 0.514);
+}
+
+.home-img h1{
+  padding-left:60px;
+  padding-top: 50px;
+  font-size: 35px;
+}
+
+.home-img p{
+  padding-top: 40px;
+  padding-left:60px;
+  line-height: 50px;
+  max-width: 55%;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.home-img button{
+  margin: 35px 0 0 60px;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.home-img button:hover{
+  color: white;
+  background-color: black;
+  transition: .3s;
+}
+
+/* style for floating products */
+
+.primary-products-top{
+  right: 0;
+  left: 0;
+  position: absolute;
+  top: 35rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.items-1, .items-2, .items-3{
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.842);
+}
+
+.items-1:hover, .items-2:hover, .items-3:hover{
+  transition: .3s;
+  box-shadow: 1px 4px 7px 1px rgba(0, 0, 0, 0.842);
+}
+
+.items-1 img, .items-2 img, .items-3 img{
+  cursor: pointer;
+  height: 240px;
+  width: 100%;
+}
+
+.items-1 img:hover, .items-2 img:hover, .items-3 img:hover{
+ 
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.itm-name{
+  font-family: 'Poppins', sans-serif;
+  right: 75px;
+  bottom: 75px;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+  pointer-events: none;
+}
+
+
+/* products */
+
+
+.products{
+  position: relative;
+  top: 250px;
+}
+
+.slider-page{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px 0 80px;
+}
+
+.lines{
+  right: 380px;
+  top: 35px;
+  position: absolute;
+  border-bottom: black solid 2px;
+  width: 50%;
+}
+
+.slider-btn{
+  display: flex;
+}
+
+.slider-btn p{
+  color:white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  background-color: rgba(128, 4, 64, 0.815);
+  margin: 0 30px 0 30px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.slider-btn p:hover{
+  background-color: rgb(128, 4, 64);
+}
+
+/* style for display products */
+
+
+.display{
+  padding-bottom: 150px;
+  border-bottom: rgb(92, 92, 92) 2px solid;
+  position: relative;
+  top: 320px;
+}
+
+.prod-img{
+  padding: 10px 0 10px 0;
+  background-color:rgba(240, 201, 169, 0.199);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.214);
+}
+
+.prod-img img{
+  height: 230px;
+}
+
+.prod-container{
+  display: grid;
+  gap: 120px;
+  grid-template-columns: repeat(4, 195px);
+  align-items: center;
+  justify-content: center;
+}
+
+.prod-img:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.414);
+  transition: .3s;
+}
+
+.prod-description{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.prod-description p{
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.prod-description button{
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgba(128, 4, 64, 0.815);
+  border-radius: 12px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.prod-description button:hover{
+  color: white;
+  background-color: black;
+  
+}
+
+/* Style for About Us  */
+
+.about{
+  position: relative;
+  top: 25rem;
+  border-bottom: rgb(92, 92, 92) 2px solid;
+  padding-bottom: 150px;
+}
+
+.about h3{
+  font-size: 35px;
+  padding-bottom: 65px;
+}
+.container-about img{
+  height: 300px;
+  border-radius: 50%;
+}
+
+.container-about p{
+  padding-left: 80px;
+  line-height: 45px;
+  font-size: 18px;
+  text-indent: 90px;
+}
+
+.container-about{
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  display: grid;
+  column-gap: 150px;
+  grid-template-columns: 800px 450px;
+}
+
+
+/* style best selling section */
+
+.best-sell{
+  position: relative;
+  top: 40rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px 3.5px rgba(0, 0, 0, 0.514);
+  padding-bottom: 90px;
+}
+
+.best-sell h1{
+  font-weight: 500;
+  padding-top: 35px;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 45px;
+}
+
+.bests-sell-flex{
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(252, 126, 218, 0.251);
+  box-shadow: 0px 1px 5px 3.5px rgba(0, 0, 0, 0.514);
+}
+
+.left-img-grid{
+  padding: 10px 0 10px 0;
+  column-gap: 115px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 35px 400px;
+}
+
+.left-side-img{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.left-side-img img{
+  height: 150px;
+  width: 150px;
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 0 0 2px 0;
+  cursor: pointer;
+
+}
+
+.left-side-img img:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.514);
+  transition: .3s;
+}
+
+.left-center-img{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-center-img img{
+  padding: 10px;
+  height: 495px;
+  width: 350px;
+  background-color: aliceblue;
+}
+
+
+.right-side-img{
+  margin-right: 95px;
+}
+
+.right-side-img p{
+  text-align: justify;
+  padding-bottom: 55px;
+  font-size: 18px;
+}
+
+.right-side-img h3, button{
+  margin-top: 10px;
+  margin-left: 25px;
+ }
+
+.right-side-img button{
+  background-color: rgba(128, 4, 64, 0.815);
+  padding: 15px 25px 15px 25px;
+  border-radius: 8px;
+  transition: .3s;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right-side-img button:hover{
+  background-color: black;
+  color: white;
+}
+
+/* style for blogs */
+
+.blogs{
+  position: relative;
+  top: 50rem;
+  background-color: white;
+  padding: 200px 0 200px 0;
+    box-shadow: 0px 1px 5px 3.5px rgba(0, 0, 0, 0.514);
+}
+
+.blogs-container-grid{
+  /* padding: 150px 0 150px 0; */
+  margin: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(231, 162, 162);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.514);
+  border-radius: 35px;
+}
+
+.blogs-container-flex{
+  height: 550px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.blogs-img img{
+  height: 350px;
+}
+
+.blogs-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 650px;
+}
+
+/* style for contact us */
+
+
+
+.contact-us{
+  background-color: white;
+  position: relative;
+  top: 60rem;
+  padding: 50px 0 150px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.514);
+}
+
+.contact-us h1, .contact-us p{
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.form{
+  display: grid;
+  margin: auto;
+  width: 600px;
+  padding: 25px 0 25px 0;
+  background-color: rgb(128, 4, 64);
+  border-radius: 25px;
+}
+
+.form-email{
+  margin: auto;
+  width: 70%;
+}
+
+.form-email input{
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.form-message{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form-message input{
+  padding-bottom: 250px;
+}
+
+.form-message button{
+  margin-left: 150px;
+  align-self: flex-start;
+  padding: 10px 20px 10px 20px;
+}
+
+
+/* style for footer */
+
+footer{
+  position: relative;
+  top: 85rem;
+  background-color: rgb(128, 4, 64);
+}
+
+.upper-menu{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.col-1-menu img{
+  height: 180px;
+  border-radius: 95px;
+}
+
+.col-1-menu a, .col-2-menu a, .col-3-menu a, .col-4-menu a{
+  text-decoration: none;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.col-1-menu, .col-2-menu, .col-3-menu, .col-4-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  
+}
+
+
+.col-1-menu a:hover, .col-2-menu a:hover, .col-3-menu a:hover, .col-4-menu a:hover{
+ color: aquamarine;
+ transform: scaleX(1.12);
+ transition: .15s;
+}
+
+.lower-menu{
+  display: flex;
+  flex-direction: column;
+  margin: 0 85px 0 85px;
+}
+
+.footer-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 35px 0 15px 0;
+  border-top: 2px black solid;
+}
+
+.footer-icons a i{
+  margin: 0 5px 0 5px;
+  padding: 12px;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+}
+
+.footer-icons a:hover{
+  transform: scale(1.2);
+  transition: .3s;
+}
+
+.footer-rights{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-rights h1{
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
+
