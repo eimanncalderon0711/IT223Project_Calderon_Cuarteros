@@ -52,7 +52,6 @@ header{
   margin-left: 85px;
 }
 
-
 /* style for nav menus */
 
 .nav-menu{
@@ -171,7 +170,6 @@ main{
   pointer-events: none;
 }
 
-
 /* products */
 
 
@@ -213,6 +211,8 @@ main{
 .slider-btn p:hover{
   background-color: rgb(128, 4, 64);
 }
+
+
 
 /* style for display products */
 
@@ -422,6 +422,192 @@ main{
   color: white;
 }
 
+
+@media only screen and (max-width: 1154px){
+/* header */
+  .nav-logo-name img{
+    margin-left: 20px;
+    height: 40px;
+    border: black solid 2px;
+    border-radius: 50px;
+  }
+  
+  .nav-logo-name h1{
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 85px;
+  }
+
+  .nav-menu{
+    margin-right: 90px;
+  }
+
+  .nav-menu a{
+    font-weight: 300;
+  }
+
+/* Products */
+  .slider-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 40px;
+  }
+
+  .slider-page h1{
+    padding-left: 30px;
+  }
+
+  .lines{
+    right: 350px;
+    top: 35px;
+    position: absolute;
+    border-bottom: black solid 2px;
+    width: 40%;
+  }
+
+  .prod-img img{
+    height: 180px;
+  }
+
+  .prod-container{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(4, 160px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prod-description p{
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .prod-description button{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+    margin-right: 12px;
+  }
+
+/* about */
+  .about h3{
+    font-size: 35px;
+    padding-bottom: 65px;
+  }
+  .container-about img{
+    height: 240px;
+    border-radius: 50%;
+  }
+  
+  .container-about p{
+    padding-left: 120px;
+    line-height: 45px;
+    font-size: 18px;
+    text-indent: 90px;
+  }
+  
+  .container-about{
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: grid;
+    column-gap: 120px;
+    grid-template-columns: 700px 450px;
+  }
+
+/* best sell */
+.best-sell h1{
+  font-weight: 500;
+  padding-top: 35px;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
+.bests-sell-flex{
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(252, 126, 218, 0.251);
+  box-shadow: 0px 1px 5px 3.5px rgba(0, 0, 0, 0.514);
+}
+
+.left-img-grid{
+  padding: 10px 0 10px 0;
+  column-gap: 115px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 35px 400px;
+}
+
+.left-side-img{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.left-side-img img{
+  height: 140px;
+  width: 130px;
+  background-color: aliceblue;
+  padding: 7px;
+  margin: 0 0 2px 0;
+  cursor: pointer;
+
+}
+
+.left-center-img{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-center-img img{
+  padding: 7px;
+  height: 453px;
+  width: 350px;
+  background-color: aliceblue;
+}
+
+
+.right-side-img{
+  margin-left: 45px;
+}
+
+.right-side-img p{
+  text-align: justify;
+  padding-bottom: 55px;
+  font-size: 15px;
+}
+
+.right-side-img h1{
+  font-size: 24px;
+}
+
+.right-side-img h3, button{
+  margin-top: 10px;
+  margin-left: 20px;
+ }
+
+.right-side-img button{
+  background-color: rgba(128, 4, 64, 0.815);
+  padding: 12px 22px 12px 22px;
+  border-radius: 8px;
+  transition: .3s;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+}
+
+
 /* style for blogs */
 
 .blogs{
@@ -465,8 +651,6 @@ main{
 
 /* style for contact us */
 
-
-
 .contact-us{
   background-color: white;
   position: relative;
@@ -490,16 +674,20 @@ main{
 }
 
 .form-email{
+  color: white;
   margin: auto;
   width: 70%;
+  padding-bottom: 25px;
 }
 
 .form-email input{
+  margin-left: 10px;
   padding: 4px;
   border-radius: 5px;
 }
 
 .form-message{
+  color: white;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -511,11 +699,23 @@ main{
 }
 
 .form-message button{
+  font-weight: 400;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 15px;
   margin-left: 150px;
   align-self: flex-start;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 25px 10px 25px;
+  font-family: 'Poppins', sans-serif;
 }
 
+.form-message button:hover{
+  color: white;
+  background-color: black;
+  transition: .3s;
+ 
+}
 
 /* style for footer */
 
