@@ -427,8 +427,14 @@ main{
   position: relative;
   top: 50rem;
   background-color: white;
-  padding: 200px 0 200px 0;
-    box-shadow: 0px 1px 5px 3.5px rgba(0, 0, 0, 0.514);
+  padding: 50px 0 140px 0;
+  box-shadow: 0px 1px 5px 3.5px rgba(0, 0, 0, 0.514);
+}
+
+.blogs h1{
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 50px;
 }
 
 .blogs-container-grid{
@@ -449,7 +455,10 @@ main{
 }
 
 .blogs-img img{
-  height: 350px;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  border: rgba(77, 76, 76, 0.356) 2px solid;
 }
 
 .blogs-description{
@@ -481,12 +490,12 @@ main{
   margin: auto;
   width: 600px;
   padding: 25px 0 25px 0;
-  background-color: rgb(128, 4, 64);
-  border-radius: 25px;
+  background-color: rgb(231, 162, 162);
+  border-radius: 15px;
 }
 
 .form-email{
-  color: white;
+  color: black;
   margin: auto;
   width: 70%;
   padding-bottom: 25px;
@@ -496,10 +505,11 @@ main{
   margin-left: 10px;
   padding: 4px;
   border-radius: 5px;
+  background-color: rgb(250, 243, 233);
 }
 
 .form-message{
-  color: white;
+  color: black;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -508,6 +518,7 @@ main{
 
 .form-message input{
   padding-bottom: 250px;
+  background-color: rgb(250, 243, 233);
 }
 
 .form-message button{
@@ -956,7 +967,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 940px){
+@media only screen and (min-width: 748px) and (max-width: 999px){
   /* header */
   .nav{
     flex-direction: column;
@@ -969,6 +980,23 @@ footer{
     margin: 0 0 0 20px;
   }
 
+  .lines{
+    display: none;
+  }
+
+  .slider-page{
+    justify-content: center;
+  }
+
+  .slider-btn p{
+    padding: 5px 15px 5px 15px;
+    margin: 0 8px 0 8px;
+  }
+
+  .slider-btn{
+    margin-left: 15px;
+  }
+
   /* main */
   main{
     padding-top: 40px;
@@ -976,7 +1004,26 @@ footer{
 
   /* floating img */
   .primary-products-top{
-    top: 35rem;
+    top: 36rem;
+  }
+
+  .itm-name{
+    font-family: 'Poppins', sans-serif;
+    right: 60px;
+    bottom: 60px;
+    font-size: 18px;
+  }
+
+  .items-1 img, .items-2 img, .items-3 img{
+    cursor: pointer;
+    height: 150px;
+    width: 100%;
+  }
+
+  .items-1, .items-2, .items-3{
+    height: 150px;
+    width: 150px;
+   
   }
 
   /* products */
@@ -998,18 +1045,18 @@ footer{
 
   /* about us */
   .about h3{
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 65px;
   }
   .container-about img{
-    height: 300px;
+    height: 200px;
     border-radius: 50%;
   }
   
   .container-about p{
-    padding-left: 80px;
-    line-height: 45px;
-    font-size: 18px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 12px;
     text-indent: 90px;
   }
   
@@ -1018,13 +1065,14 @@ footer{
     align-self: center;
     align-items: center;
     display: grid;
-    column-gap: 100px;
-    grid-template-columns: 500px 350px;
+    column-gap: 50px;
+    grid-template-columns: 500px 200px;
   }
 
   /* best sell section */
   .bests-sell-flex{
     padding: 25px 0 25px 0;
+    grid-template-columns: 1fr;
   }
 
   .right-side-img p{
@@ -1069,6 +1117,34 @@ footer{
     gap: 2px;
   }
 
+  /* blogs */
+
+  .blogs h1{
+    padding-bottom: 10px;
+  }
+
+  .blogs-img img{
+    height: 300px;
+    width: 300px;
+  }
+
+  .blogs-img{
+    padding-top: 20px;
+  }
+
+  .blogs-description{
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* contact us */
+  .form-message button{
+    margin-top: 30px;
+  }
+
+
+
+  /* footer */
   .col-2-menu a, .col-3-menu a, .col-4-menu a{
     font-size: 13px;
   }
@@ -1080,5 +1156,21 @@ footer{
   .footer-icons a, .footer-rights h1{
     font-size: 13px;
   }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 747px){
+  
+  .nav{
+    flex-direction: column;
+    height: 120px;
+  }
+
+  .nav-menu{
+    margin-bottom: 15px;
+  }
+
+ 
+
 
 }
